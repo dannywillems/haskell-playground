@@ -10,3 +10,8 @@ printTree (L v l r) = do
   print v
   printTree l
   printTree r
+
+data Record1 = Record1
+  { name :: String,
+    age :: Int
+  }

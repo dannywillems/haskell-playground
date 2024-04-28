@@ -6,6 +6,8 @@ module Main where
 
 import Hello
 import DataType
+import Locker
+import Typeclasses
 
 
 sayHello :: (Integral a) => a -> String
