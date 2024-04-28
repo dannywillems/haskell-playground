@@ -5,6 +5,7 @@
 module Main where
 
 import Hello
+import DataType
 
 
 sayHello :: (Integral a) => a -> String
