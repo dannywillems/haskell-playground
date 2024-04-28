@@ -1,3 +1,5 @@
+-- Following https://learnyouahaskell.com/
+
 {-# OPTIONS_GHC -Wno-type-defaults #-}
 
 module Main where
