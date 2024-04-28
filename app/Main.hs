@@ -4,6 +4,9 @@
 
 module Main where
 
+import Hello
+
+
 sayHello :: (Integral a) => a -> String
 sayHello 7 = "7"
 sayHello _ = "Not supported, yet"
@@ -44,8 +47,15 @@ max' a b
   | a > b = a
   | otherwise = b
 
+accfn :: Num a => a -> a -> a
+accfn acc x = acc + x
+
+sum' :: (Num a) => [a] -> a
+sum' = foldl accfn 0
+
 main :: IO ()
 main = do
+  print (numUniques [1, 2, 3, 4])
   print (cylinder 2 3)
   print (initials "John" "Doe")
   print ("s" `max` "se")
